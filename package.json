@@ -1,0 +1,25 @@
+{
+  "name": "claude-sessions",
+  "version": "1.0.0",
+  "description": "Local search + resume for Claude Code sessions, exposed to Claude via MCP",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/transformers": "3.7.5",
+    "@modelcontextprotocol/sdk": "1.17.0",
+    "better-sqlite3": "11.10.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.12",
+    "@types/node": "22.10.2",
+    "typescript": "5.6.3"
+  },
+  "type": "module",
+  "bin": {
+    "claude-sessions": "dist/cli.js",
+    "claude-sessions-mcp": "dist/server.js"
+  }
+}
